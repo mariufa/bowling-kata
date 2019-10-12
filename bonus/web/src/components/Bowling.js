@@ -6,9 +6,11 @@ import { DividerLine } from '@sb1/ffe-core-react';
 import { EmphasizedText } from '@sb1/ffe-core-react';
 
 const BowlingContainer = styled.div`
-  width: 30rem;
   margin: 1rem auto;
   padding: 2rem; 
+  @media (min-width: 480px) {
+    width: 30rem;
+  }
 `;
 
 const CustomPrimaryButton = styled(PrimaryButton)`
