@@ -1,0 +1,6 @@
+.vscode
+.pytest_cache
+*Dockerfile*
+__pycache__
+venv
+.git
