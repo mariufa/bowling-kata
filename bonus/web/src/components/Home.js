@@ -6,11 +6,6 @@ const HomeContainer = styled.div`
   text-align: center;
 `;
 
-const ButtonContainer = styled.div`
-  display: block;
-  margin: 1rem 0;
-`;
-
 const CustomShortcutButton = styled(ShortcutButton)`
   width: 9rem;
   display: block;
