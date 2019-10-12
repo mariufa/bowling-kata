@@ -1,5 +1,5 @@
 export const postScore = (req, res) => {
-  const scoreList = req.body.scoreList;
+  const scoreList = req.body;
   const score = getScore(scoreList);
   return res.send({ score: score });
 };
