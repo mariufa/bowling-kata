@@ -1,6 +1,7 @@
 import React from "react";
 import Bowling from "./Bowling";
+import { NODE_API } from "../AppConfig";
 
 export default function Node() {
-    return <Bowling api="http://localhost:3001/api/post_score"/>
+    return <Bowling api={`${NODE_API}/api/post_score`}/>
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Bowling from "./Bowling";
+import { PYTHON_API } from "../AppConfig";
 
 export default function Python() {
-    return <Bowling api="http://localhost:5000/api/post_score"/>
+    return <Bowling api={`${PYTHON_API}/api/post_score`}/>
 }
