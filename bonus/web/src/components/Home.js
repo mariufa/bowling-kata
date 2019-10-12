@@ -18,17 +18,11 @@ const CustomShortcutButton = styled(ShortcutButton)`
   text-align: center;
 `;
 
-export default function Home({ history }) {
-  
-  const onClickNode = () => {
-    console.log("Clicked node");
-    history.push('/bowling');
-  }
-
+export default function Home() {
   return (
     <HomeContainer>
-      <CustomShortcutButton onClick={onClickNode}>Node</CustomShortcutButton>
-      <CustomShortcutButton>Java</CustomShortcutButton>
+      <CustomShortcutButton element="a" href="/node">Node</CustomShortcutButton>
+      <CustomShortcutButton element="a" href="/java">Java</CustomShortcutButton>
       <CustomShortcutButton>Python</CustomShortcutButton>
     </HomeContainer>
   );

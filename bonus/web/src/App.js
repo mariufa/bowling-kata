@@ -1,15 +1,17 @@
 import React from "react";
 import "./Global.less";
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Bowling from "./components/Bowling";
+import Node from "./components/Node";
+import Java from "./components/Java";
 
 function App() {
   return (
     <div>
       <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/bowling" component={Bowling}/>
+        <Route path="/node" component={Node}/>
+        <Route path="/java" component={Java}/>
       </Router>
     </div>
   );

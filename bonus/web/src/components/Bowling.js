@@ -15,18 +15,18 @@ const CustomPrimaryButton = styled(PrimaryButton)`
   margin: 1rem 0;
 `;
 
-export default function Bowling(){
+export default function Bowling({ api }){
   const [scoreList, setScoreList] = useState("");
   const [score, setScore] = useState(0);
 
   const onClickCalc = async() => {
     try {
-      const response = await fetch(`http://localhost:3001/api/post_score`, {
+      const response = await fetch(api, {
         method: "post",
         headers: { "Content-Type" : "application/json" },
-        body: JSON.stringify({
-          scoreList: JSON.parse(scoreList)
-        })
+        body: JSON.stringify(
+          JSON.parse(scoreList)
+        )
       });
       if (!response.ok) {
         throw Error(response.statusText);
