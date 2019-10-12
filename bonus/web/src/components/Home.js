@@ -23,7 +23,7 @@ export default function Home() {
     <HomeContainer>
       <CustomShortcutButton element="a" href="/node">Node</CustomShortcutButton>
       <CustomShortcutButton element="a" href="/java">Java</CustomShortcutButton>
-      <CustomShortcutButton>Python</CustomShortcutButton>
+      <CustomShortcutButton element="a" href="/python">Python</CustomShortcutButton>
     </HomeContainer>
   );
 };
