@@ -12,7 +12,6 @@ java -jar target/*.jar
 ## Docker
 ```bash
 # Build
-mvn clean install # Currently not building jar inside docker
 docker build -t java-api .
 # Run for local machine
 docker run -it --rm --name java-api --network="host" java-api
