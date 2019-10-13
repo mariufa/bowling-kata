@@ -2,21 +2,25 @@ version: "3.7"
 services:
 
   web:
+    build: ./web
     image: web:latest
     ports:
       - "3000:3000"
 
   node-api:
+    build: ./node-api
     image: node-api:latest
     ports:
       - "3001:3001"
   
   java-api:
+    build: ./java-api
     image: java-api:latest
     ports:
       - "8080:8080"
   
   python-api:
+    build: ./python-api
     image: python-api:latest
     ports:
       - "5000:5000"
