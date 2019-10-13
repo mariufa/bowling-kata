@@ -5,7 +5,7 @@ This is a spring boot application to serve json
 ```bash
 # Install dependencies
 mvn install
-# Start application on 3000
+# Start application on 8080
 java -jar target/*.jar
 ```
 
